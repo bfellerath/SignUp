@@ -25,8 +25,13 @@ class ListEntriesController < ApiController
 
     delete '/:id' do
         content_type :json
-        current_api_user!.list_entries.destroy(params[:id])
+        if current_api_user!.admin?
+            current_api_user!.list_entries.destroy(params[:id])
+        else
+            return
+        end
         halt 202
+
     end
 
 end

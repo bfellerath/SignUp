@@ -1,3 +1,21 @@
 body {
-    background-color: lightblue;
+    background-image: url('images/upfeathers.png');
+}
+
+#log-out-button {
+    visibility: hidden;
+}
+
+#log-out-div:hover > form {
+    visibility: visible;
+}
+
+#log-out-div {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#list_entries-list {
+    background: rgba(100, 100, 100, 0.5);
 }

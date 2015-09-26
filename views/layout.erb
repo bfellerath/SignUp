@@ -4,19 +4,32 @@
         <meta charset="utf-8">
         <title>SignUp</title>
         <link rel="stylesheet" href="/css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
 
         <script type="text/template" id='list_entry-template'>
             <h3>
             <%%= name %>
+            <%%= email %>
             </h3>
+            <!-- only current user admin can see the remove button -->
+            <% if @current_user && @current_user.is_admin? %>
             <button type="button" class="remove">remove</button>
+            <% end %>
 
         </script>
 
     </head>
     <body>
 
+        <div class="container" id="navbar">
+
+        </div>
+
+        <center><div class="container">
+
         <%= yield %>
+
+    </div></center>
 
     </body>
 </html>

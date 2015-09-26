@@ -3,7 +3,7 @@ class WelcomeController < ApplicationController
     get '/' do
         erb :index
     end
-    # 
+    #
     # post '/api/list_entry' do
     #     content_type :json
     #     list_entry = ListEntry.create( params[:list_entry] || listEntryParams)

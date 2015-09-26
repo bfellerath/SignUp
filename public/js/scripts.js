@@ -69,6 +69,7 @@ list_entries.fetch();
 $('form.create-list_entry').on('submit', function(e){
     e.preventDefault();
     var newName = $(this).find("#my-name").val();
-    list_entries.create({name: newName});
+    var newEmail = $(this).find("#my-email").val();
+    list_entries.create({name: newName, email: newEmail});
 
 });

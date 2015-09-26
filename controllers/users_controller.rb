@@ -7,6 +7,7 @@ class UsersController < ApplicationController
     post '/' do
         user = User.new(params[:user])
         user.password = params[:password]
+        # setting admin to true or false
         user.save
         redirect '/'
     end
@@ -16,7 +17,7 @@ class UsersController < ApplicationController
     end
 
     get '/profile' do
-        authenticate!
+        # authenticate!
         @current_user = current_user
         erb :'users/profile'
     end

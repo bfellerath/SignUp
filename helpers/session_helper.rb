@@ -9,7 +9,12 @@ module SessionHelper
 
     def current_user
         if session[:user_id]
-            User.find(session[:user_id])
+            user = User.find(session[:user_id])
+            if session[:is_admin]
+                user.is_admin = true
+            end
+            user
+
         end
 
     end
