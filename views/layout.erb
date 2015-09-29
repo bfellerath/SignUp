@@ -5,25 +5,58 @@
         <title>SignUp</title>
         <link rel="stylesheet" href="/css/styles.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton/2.0.4/skeleton.css">
+        <link href='https://fonts.googleapis.com/css?family=Days+One' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Anonymous+Pro' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+     <link href='https://fonts.googleapis.com/css?family=Armata' rel='stylesheet' type='text/css'>
+     <link href='http://fonts.googleapis.com/css?family=Share+Tech+Mono' rel='stylesheet' type='text/css'>
+
+
 
         <script type="text/template" id='list_entry-template'>
-            <h3>
+
+            <div class="row">
+                <div class="four columns">
+
+
             <%%= name %>
+
+            </div>
+
+
+            <div class="four columns">
+
+
+
             <%%= email %>
-            </h3>
+
+        </div>
+        <div class="four columns">
+
+
+
             <!-- only current user admin can see the remove button -->
             <% if @current_user && @current_user.is_admin? %>
             <button type="button" class="remove">remove</button>
             <% end %>
+            </div>
+            </div>
 
         </script>
 
     </head>
     <body>
 
-        <div class="container" id="navbar">
+        <div id="headerdiv" class="container">
+           <CENTER><h1>SignUp</h1><CENTER>
 
-        </div>
+         </div>
+
+
+
+
 
         <center><div class="container">
 

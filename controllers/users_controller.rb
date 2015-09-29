@@ -17,7 +17,7 @@ class UsersController < ApplicationController
     end
 
     get '/profile' do
-        # authenticate!
+        authenticate!
         @current_user = current_user
         erb :'users/profile'
     end

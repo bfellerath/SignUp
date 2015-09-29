@@ -1,11 +1,49 @@
+<div id="cooldiv" class="container">
+
+<div id="navbar" class="row">
+
+<div class="four columns">  <a id="dark-button" class="button" href="/users/new">REGISTER</a></div>
+<div class="four columns">  <a id="dark-button" class="button" href="/users/login">LOGIN</a></div>
+<div class="four columns">  <a id="dark-button" class="button" href="/users/profile">PROFILE</a></div>
+
+
+</div>
+
+</div>
 <h3>welcome back... please sign in</h3>
 
 <!-- log in form -->
 <form action="/sessions" method="post">
-    <input type="text" name="username" placeholder='...username'>
-    <input type="password" name="password" placeholder='...password'>
-    <label for="admin">admin</label>
-    <input type="checkbox" name="admin">
-    <input type="submit" value="Log In">
+    <div class="row">
+        <div class="six columns">
+            <label class="band-name">Band Name</label>
+            <input class="u-full-width" type="text" name="username" placeholder='...username'>
+        </div>
+        <div class="six columns">
+            <label class="band-name">Password</label>
+            <input class="u-full-width" type="password" name="password" placeholder='...password'>
+        </div>
 
+    </div>
+
+
+    <!-- <label class="admin">admin</label>
+    <input type="checkbox" name="admin">
+    <span class="label-body">Send a copy to yourself</span>
+    <input type="submit" value="Log In"> -->
+
+
+        <input class="button-primary" type="submit" value="Log In">
+
+        <label class="admin">
+      <input class="label-body" type="checkbox" name="admin">
+      <span class="label-body">captain's privileges</span>
+    </label>
+
+
+
+
+
+
+</div>
 </form>

@@ -1,5 +1,21 @@
 body {
-    background-image: url('images/upfeathers.png');
+    /*background-image: url('images/upfeathers.png');*/
+    background-color: #F7FEFE;
+    /*background-image: url('images/boris-flood.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;*/
+    font-family: 'Anonymous Pro', ;
+    font-family: 'Share Tech Mono', ;
+    /*font-family: 'Special Elite', cursive;;*/
+
+
+      background: -webkit-linear-gradient(90deg, #abbaab 10%, #ffffff 90%); /* Chrome 10+, Saf5.1+ */
+      background:    -moz-linear-gradient(90deg, #abbaab 10%, #ffffff 90%); /* FF3.6+ */
+      background:     -ms-linear-gradient(90deg, #abbaab 10%, #ffffff 90%); /* IE10 */
+      background:      -o-linear-gradient(90deg, #abbaab 10%, #ffffff 90%); /* Opera 11.10+ */
+      background:         linear-gradient(90deg, #abbaab 10%, #ffffff 90%); /* W3C */
+
+
 }
 
 #log-out-button {
@@ -17,5 +33,72 @@ body {
 }
 
 #list_entries-list {
-    background: rgba(100, 100, 100, 0.5);
+    background: rgba(50, 100, 100, 0.2);
 }
+
+ #headerdiv {
+    font-family: 'Special Elite', cursive;
+    font-family: 'Days One', sans-serif;
+    font-family: 'Share Tech Mono', ;
+
+
+    /*background-image: url('http://i.imgur.com/iZ9wG4n.jpg');
+    background-image: url('http://www.mikechurch.com/wp-content/uploads/2012/11/blade-runner-eye.jpg');
+    background-position: center;
+    background-repeat: no-repeat;*/
+    /*color: #B28F00;*/
+    color: black;
+ }
+
+ #navbar {
+    background-color: #FFCC66;
+    background-color: #F7FEFE;
+    /*border-bottom: lightgrey solid 2px;*/
+    padding-top: 5px;
+
+ }
+
+ /*#list {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 1.5em;
+    background-color: lightyellow;
+ }*/
+
+ #list_entries-list {
+     margin-top: 40px;
+     border-radius: 10px;
+ }
+
+ #cooldiv {
+    background-color: black;
+    align-items: center;
+    text-align: center;
+    /*border: grey solid 2px;*/
+    padding: 1px;
+ }
+ .band-name {
+     float: left;
+ }
+ .button-primary{
+     float: left;
+ }
+ .admin{
+     float: right;
+ }
+
+ h3 {
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Share Tech Mono', ;
+ }
+
+ #dark-button {
+    border: black solid 1px;
+    font-family: 'Anonymous Pro', ;
+    font-family: 'Share Tech Mono', ;
+    font-size: 15px;
+    color: black;
+    min-width: 132px;
+    background-color: #E8FEFE;
+ }

@@ -14,23 +14,31 @@
 </div>
     </div>
 
-
-
-
-
-
-
-
-<form class="create-list_entry" action="/api/list_entry" method="post">
+<!-- <form class="create-list_entry" action="/api/list_entry" method="post">
     <input type="text" id="my-name" name="list_entry[name]" placeholder="...name">
     <input type="text" id="my-email" name="list_entry[email]" placeholder="...email">
     <input type="submit" value="Subscribe!">
 
+</form> -->
+
+<form class="create-list_entry" action="/api/list_entry" method="post">
+    <div class="row">
+        <div class="six columns">
+            <label class="band-name">Name</label>
+            <input class="u-full-width" type="text" id="my-name" name="list_entry[name]" placeholder='...name'>
+        </div>
+        <div class="six columns">
+            <label class="band-name">Email</label>
+            <input class="u-full-width" type="email" id="my-email" name="list_entry[email]" placeholder='...email'>
+        </div>
+
+    </div>
+    <input class="button-primary" type="submit" value="Post">
 </form>
 
 
 
-<section id="list_entries-list">
+<section class="container" id="list_entries-list">
 
 </section>
 
