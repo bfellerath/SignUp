@@ -1,5 +1,10 @@
 class ListEntriesController < ApiController
 
+    enable :sessions
+    helpers SessionHelper
+
+
+
 
     def listEntryParams
         @list_entry_params = @list_entry_params || JSON.parse(request.body.read.to_s)
@@ -25,8 +30,9 @@ class ListEntriesController < ApiController
 
     delete '/:id' do
         content_type :json
-        if current_api_user!.is_admin?
-            current_api_user!.list_entries.destroy(params[:id])
+        user = current_api_user!
+        if user.is_admin
+            user.list_entries.destroy(params[:id])
         else
             return
         end

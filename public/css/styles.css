@@ -66,6 +66,11 @@ body {
     background-color: lightyellow;
  }*/
 
+ .list_entry:first-child {
+     padding-top: 10px;
+
+ }
+
  #list_entries-list {
      margin-top: 40px;
      border-radius: 10px;

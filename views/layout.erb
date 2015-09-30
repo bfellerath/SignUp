@@ -17,32 +17,21 @@
 
         <script type="text/template" id='list_entry-template'>
 
-            <div class="row">
-                <div class="four columns">
-
-
-            <%%= name %>
-
-            </div>
-
-
+    <div class="row">
             <div class="four columns">
-
-
-
-            <%%= email %>
-
-        </div>
-        <div class="four columns">
-
-
-
-            <!-- only current user admin can see the remove button -->
+                <%%= name %>
+            </div>
+            <div class="four columns">
+                <%%= email %>
+            </div>
             <% if @current_user && @current_user.is_admin? %>
+            <div class="four columns">
+            <!-- only current user admin can see the remove button -->
             <button type="button" class="remove">remove</button>
+            </div>
             <% end %>
-            </div>
-            </div>
+
+    </div>
 
         </script>
 
