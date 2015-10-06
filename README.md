@@ -8,11 +8,11 @@ which gives the user the power to delete entries from the list.
 
 ###Hidden Logout Button on Profile Page:
 
-![](/README_Images/hidden-logout.gif)
+![](/README_images/hidden-logout.gif)
 
 ###Sign in as an Admin
 
-![](/README_Images/Admin_Signin.png)
+![](/README_images/Admin_Signin.png)
 
 
 ###User Stories
