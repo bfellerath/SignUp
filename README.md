@@ -12,7 +12,7 @@ which gives the user the power to delete entries from the list.
 
 ###Log in as an Admin
 
-![](/README_images/Admin_login.png)
+![](/README_images/Admin-login.png)
 
 
 ###User Stories
