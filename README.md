@@ -10,9 +10,9 @@ which gives the user the power to delete entries from the list.
 
 ![](/README_images/hidden-logout.gif)
 
-###Sign in as an Admin
+###Log in as an Admin
 
-![](/README_images/Admin_Signin.png)
+![](/README_images/Admin_login.png)
 
 
 ###User Stories
